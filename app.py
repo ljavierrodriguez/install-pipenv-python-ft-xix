@@ -3,10 +3,9 @@ import requests
 from functions import sumar
 import datetime
 
-
 resp = requests.get('https://jsonplaceholder.typicode.com/users')
-
 data = resp.json()
+print(data)
 
 for user in data:
     print(user['name'])
